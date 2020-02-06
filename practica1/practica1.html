@@ -13,7 +13,11 @@
         <style>
             .documento{
                 margin-left: 40px;
-                text-align: left;
+                margin-right: 40px;
+                text-align: justify;
+                text-justify: inter-word;
+            }li{
+                margin: 0 0 10px 0;
             }
         </style>
     </head>
@@ -26,18 +30,91 @@
             <main>
                 <h2>Dirección IP:</h2>
                 <div class="documento">
-                    <p>Una dirección IP, de Internet Protocol, es una etiqueta numérica asignada a cada dispositivo</p>
-                    <p>que se conecte a una red que use el Internet Protocol para comunicarse con el resto del mundo.</p>
-                    <p>Las direcciones IP tienen 2 funcionalidades principales: Identificación del hostdentro de la red</p>
-                    <p>y la dirección de la red.</p>
+                    <p>
+                    Una dirección IP, de Internet Protocol, es una etiqueta numérica asignada a cada dispositivo
+                    que se conecte a una red que use el Internet Protocol para comunicarse con el resto del mundo.     
+                    Las direcciones IP tienen 2 funcionalidades principales: Identificación del host dentro de la red
+                    y la dirección de la red.</p>
+                    <p>La máscara de red es usada en una o varias su redes IP. La máscara divide redes en dos partes: prefijo y host, 
+                        con la parte del host se define el tamaño de su red. La máscara de red determina cuántos y qué bits del espacio de la dirección 
+                        host representan el número de su red y cuántos y cuáles representan el número de host. La dirección IPv4 completa se    
+                        compone de 32 bits. En función de la clase de dirección, puede haber como máximo 24 bits y como mínimo 8 disponibles para representar 
+                        el espacio de la dirección host.</p>
                 </div>
                 <h2>Tipos de Direcciones IP:</h2>
                 <div class = "documento">
-                    <p>Hoy en día se usan 2 versiones del protocolo IP, IPv4 e IPv6.</p>
+                    <p>
+                        Hoy en día se usan 2 versiones del protocolo IP, IPv4 e IPv6.</p>
                     <ul>
                         <li>Internet Protocol version 4:</li>
-                    </ul>    
-                
+                        El IPv4 es la cuarta versión implementada del IP. Originalmente fue desplegado para la ARPANET en 1983. 
+                        A pesar de los años, el IPv4 sigue siendo la implementación que redirige la    mayor cantidad de tráfico
+                        del internet hoy.
+                        El IPv4 usa un espacio de dirección de 32 bits, por lo tanto, existen alrededor de 2<sup>32</sup> direcciones 
+                        disponibles. Sin embargo, se reservan cerca de 18 millones de direcciones para redes privadas, y 270 millones
+                        para difusión múltiple.   Las direcciones se representan con notación decimal, expresando 4 octetos binarios en 
+                        su formato decimal, separados por un punto. <br>Por ejemplo, la dirección IP de cuatro puntos 192.0.2.235 representa 
+                        el número decimal de 32 bits 3221226219, que en formato hexadecimal es 0xC00002EB. Esto también se puede    expresar en 
+                        formato hexadecimal punteado como 0xC0.0x00.0x02.0xEB, o con valores de byte octal como 0300.0000.0002.0353.  
+                        Las direcciones IPv4 también tienen clases, que sirven para identificar la conexión de un dispositivo dentro de una red.  </p>
+                        <p>Existen 5 tipos de clases de IP más ciertas direcciones especiales:
+                        Red por defecto (default) - La dirección IP de 0.0.0.0 se utiliza para la red por defecto.
+                        <ul>
+                            <li>Clase A: Las direcciones de Clase A solo incluyen IP a partir de 1.x.x.x a 126.x.x.x solamente. 
+                                El rango de IP 127.x.x.x está reservado para las direcciones IP de bucle invertido.
+                                  La máscara de su ed predeterminada para la dirección IP de Clase A es 255.0.0.0, 
+                                lo que implica que el direccionamiento de Clase A puede tener 126 redes (2<sup>7</sup>-2) y   16777214 hosts 
+                                (2<sup>24</sup>-2).</li>
+                            <li>
+                                Clase B: Las direcciones IP de Clase B varían de 128.0.x.x a 191.255.x.x. La máscara de su ed predeterminada 
+                                para la Clase B es 255.255.x.x. La clase B tiene 16384 (2<sup>14</sup>)   direcciones de red y 
+                                65534 (21<sup>16</sup>-2) direcciones de host.
+                            </li>
+                            <li>
+                                Clase C: Las direcciones IP de clase C varían de 192.0.0.x a 223.255.255.x. La máscara de su ed predeterminada 
+                                para la clase C es 255.255.255.x. La clase C proporciona   2097152 (2<sup>21</sup>) direcciones de red y 254 
+                                (2<sup>8</sup>-2) direcciones de host.
+                            </li>
+                            <li>
+                                Clase D: La clase D tiene un rango de direcciones IP de 224.0.0.0 a 239.255.255.255. La clase D está reservada para multidifusión. 
+                                En la multidifusión, los datos no están   destinados a un host en particular, es por eso que no es necesario extraer la dirección 
+                                del host de la dirección IP, y la Clase D no tiene ninguna máscara de su ed.
+                            </li>
+                            <li>
+                                Clase E: Esta clase de IP está reservada para fines experimentales solo para investigación y desarrollo o estudio. 
+                                Las direcciones IP en esta clase varían de 240.0.0.0 a   255.255.255.254. 
+                                Al igual que la Clase D, esta clase tampoco está equipada con ninguna máscara de su ed.
+                            </li>
+                        </ul>
+                        </p>
+                        <li>Internet Protocol version 6:</li>
+                        El Protocolo de Internet versión 6 (IPv6) es un protocolo de capa de red que permite la comunicación y la transferencia de datos a través de la red. 
+                        IPv6 entró en existencia en 1998   con el único propósito de hacerse cargo y reemplazar el protocolo IPv4 algún día.  
+                        Dado que los dispositivos inalám icos y conectados a la red aumentan rápidamente cada día, se esperaba que para 2010, 
+                        Internet hubiera agotado todas las direcciones IPv4 únicas.   
+                        Para crear un nuevo estándar de protocolo de capa de red que permita crear más direcciones IP únicas, se estandarizó IPv6.  
+                        <br>Los dos protocolos no están diseñados para ser interoperables y, por lo tanto, la comunicación directa entre ellos es imposible, lo que complica el cambio a IPv6. 
+                        Sin embargo,  se han ideado varios mecanismos de transición para rectificar esto.
+                        
+                        Las direcciones IPv6 son direcciones IP de 128 bits escritas en hexadecimal y separadas por dos puntos.   Un ejemplo de dirección 
+                        IPv6 podría escribirse así: 3ffe: 1900: 4545: 3: 200: f8ff: fe21: 67cf.  
+                        <h3>Como se compone una dirección IPv6:</h3>
+                        Un paquete IPv6 tiene dos partes: un encabezado y una carga útil.
+                        El encabezado consta de una parte fija con una funcionalidad mínima requerida para todos los paquetes y puede ir seguido de extensiones opcionales para implementar características especiales.
+                        El encabezado fijo ocupa los primeros 40 octetos (320 bits) del paquete IPv6. Contiene las direcciones de origen y destino, las opciones de clasificación de tráfico, un contador de saltos y 
+                        el tipo de extensión opcional o carga útil que sigue al encabezado. Este campo Siguiente encabezado le dice al receptor cómo interpretar los datos que siguen al encabezado. Si el paquete contiene 
+                        opciones, este campo contiene el tipo de opción de la siguiente opción. 
+                        El campo "Encabezado siguiente" de la última opción, apunta al protocolo de capa superior que se transporta en la carga útil del paquete.<br>
+                        Los encabezados de extensión tienen opciones que se utilizan para el tratamiento especial de un paquete en la red, por ejemplo, para enrutamiento, fragmentación y seguridad mediante el marco IPsec.<br>
+                        Sin opciones especiales, una carga útil debe ser inferior a 64kB. Con una opción Jumbo Payload (en un encabezado de extensión Hop-By-Hop Options), la carga útil debe ser inferior a 4 GB.<br>
+                        A diferencia de IPv4, los enrutadores nunca fragmentan un paquete. <br>
+                    </ul>
+                </div>    
+                <h2>Dirección MAC:</h2>
+                <div class="documento">
+                    <p>
+                        aa
+                    </p>
                 </div>
                 
             </main>
