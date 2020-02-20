@@ -2,8 +2,13 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
 header{
-    font-family: Cam ia, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: green;
     padding: 1px;
     text-align: center;

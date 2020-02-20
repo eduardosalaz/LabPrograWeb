@@ -31,10 +31,172 @@
             <main>
                 <h2>Contenido de la Lección 1: Definición de HTML</h2>
                 <div class="documento">
+                    <h3>
+                        ¿Qué es exactamente HTML5?
+                    </h3>
                     <p>
-                        El contenido 
+                        Hay que definir 2 conceptos de HTML5 distintos. El primero hace referencia al estándar más reciente del 
+                        lenguaje de marcado HTML, recomendado por el World Wide Web Consortium (W3C), que incorpora nuevas
+                        etiquetas de marcado.<br> Por su parte, también se puede hacer referencia a toda la familia HTML5, que 
+                        incorpora nuevas tecnologías, tales como CSS3, Javascript, nuevas APIs(Application Programming Interfaces) 
+                        que pueden ser usadas en conjunto con Javascript.
+                    </p>
+                    <h3>
+                        Nuevas etiquetas en HTML5
+                    </h3>
+                    <p>
+                        El estándar HTML5 incorpora un buen número de etiquetas nuevas y modifica etiquetas ya existentes, dándole más
+                        herramientas a los programadores para la creación de sus sitios web. A continuación unos ejemplos.
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Etiqueta nueva</th>
+                                <th>Atributos</th>
+                                <th>Descripción</th>
+                            </tr>
+                            <tr>
+                                <th><<span>article></th>
+                                <th>Atributos globales </th>
+                                <th>La etiqueta <<span>article> especifica contenido independiente y autónomo.</th>
+                            </tr>
+                            <tr>
+                                <th><<span>aside></th>
+                                <th>Atributos globales</th>
+                                <th>La etiqueta <<span>aside> define contenido aparte del contenido en el que se coloca.</th>
+                            </tr>
+                            <tr>
+                                <th><<span>datalist></th>
+                                <th>Atributos globales</th>
+                                <th>La etiqueta <<span>datalist> especifica una lista de opciones predefinidas para un elemento <<span>input>.</th>
+                            </tr>
+                            <tr>
+                                <th><<span>details></th>
+                                <th>Atributos globales y open</th>
+                                <th>La etiqueta <<span>details> especifica detalles adicionales que pueden ser vistos o ocultados por el usuario.</th>
+                            </tr>
+                            <tr>
+                                <th><<span>embed></th>
+                                <th>height | src | type | width</th>
+                                <th>La etiqueta <<span>embed> define un espacio para una aplicación externa o contenido interactivo.</th>
+                            </tr>
+                            <tr>
+                                <th><<span>mark></th>
+                                <th>Atributos globales </th>
+                                <th>La etiqueta <<span>mark> resalta contenido dentro de la etiqueta como con un marcador.</th>
+                            </tr>
+                            <tr>
+                                <th><<span>progress></th>
+                                <th>max | value</th>
+                                <th>La etiqueta <<span>progress> ofrece una barra de progreso que puede interactuar con Javascript.</th>
+                            </tr>
+                            <tr>
+                                <th><<span>section></th>
+                                <th>Atributos globales </th>
+                                <th>La etiqueta <<span>section> define secciones dentro de un documento HTML, como los headers, footers, navs, etc.</th>
+                            </tr>
+                        </table>
+                        <br>
+                        En total, HTML5 agrega 23 etiquetas nuevas, modifica 7 y elimina 15.
+                    </p>
+                    <h3>
+                        Novedades de HTML5 importantes
+                    </h3>
+                    <p>
+                        Dentro de las etiquetas previamente mencionadas, resaltan un par por su utilidad para hacer sitios interactivos
+                        La especificación HTML5 incluye etiquetas que nos permiten integrar contenidos multimedia sin necesidad de complementos de navegador. Las
+                        etiquetas &lt;video&gt; y &lt;audio&gt; sirven para integrar video y audio en las páginas web de la misma forma que actualmente se hace con
+                        los archivos de imagen utilizando la etiqueta &lt;img&gt;.
+                    </p>
+                    <h4 style= margin-left:40px>Ejemplos:</h4>
+                    <p style= margin-left:40px>
+                        Para insertar un video se utiliza la siguiente etiqueta: <br> <br>
+                        &lt;video src="catz.mp4" width="400" height="300"&gt;&lt;/video&gt;
+                    </p>
+                    <p style= margin-left:40px>
+                        Para insertar un audio se utiliza la siguiente etiqueta: <br><br>
+                        &lt;audio src="high_seas_rip.mp3" controls preload="auto" autobuffer&gt;&lt;/audio&gt;
+                    </p>
+                    <h3>
+                        El Canvas
+                    </h3>
+                    <p>
+                        El elemento de Canvas es parte de HTML5 y permite la representación dinámica y programable de formas 2D e imágenes de mapa de bits.
+                        Es un modelo de procedimiento de bajo nivel que actualiza un mapa de bits y no tiene un gráfico de escena incorporado, pero a 
+                        través de WebGL permite mostrar formas e imágenes en 3D. HTML5 Canvas también ayuda a crear juegos en 2D.
+                    </p>
+                    <p>
+                        Un Canvas consiste en una región dibujable definida en código HTML con atributos de alto y ancho. El código JavaScript puede 
+                        acceder al área a través de un conjunto completo de funciones de dibujo similares a las de otras API 2D comunes, lo que permite 
+                        gráficos generados dinámicamente. Algunos usos anticipados del lienzo incluyen la creación de gráficos, animaciones, juegos y 
+                        composición de imágenes.
+                    </p>
+                    <h3>Ejemplo de Canvas</h3>
+                    <pre>
+                        &lt;canvas id="ejemplo" width="200" height="200" &gt;
+                        This text is displayed if your browser does not support HTML5 Canvas.
+                        &lt;/canvas&gt;
+                    </pre>
+                    <p>
+                        Usando Javascript podemos dibujar con este canvas.
+                    </p>
+                    <pre>
+                        var example = document.getElementById('ejemplo');
+                        var context = example.getContext('2d');
+                        context.fillStyle = 'red';
+                        context.fillRect(30, 30, 50, 50);
+                    </pre>
+                    <p>
+                        Lo que da como resultado:
+                    </p>
+                    <img src ="canvas.png" alt="Canvas Rojo">
+                    <h3>
+                        APIs
+                    </h3>
+                    <p>
+                        Además de especificar el marcado, HTML 5 especifica las interfaces de programación de aplicaciones de scripting (API) 
+                        que se pueden usar con JavaScript. Las interfaces existentes del Modelo de Objetos del Documento (DOM) son características 
+                        extendidas y de facto documentadas. También hay nuevas API, como:
+                        <ul>
+                            <li>
+                                Canvas
+                            </li>
+                            <li>
+                                Geolocalización
+                            </li>
+                            <li>
+                                WebAudio
+                            </li>
+                            <li>
+                                WebSQL
+                            </li>
+                        </ul>
+                        Por ejemplo, la API de Geolocalización nos permite conocer el punto geográfico desde el cual se conecta el navegador a Internet. 
+                        Esta información se emplea para enviar al usuario datos de interés para él, ajustados a su ubicación. Como ejemplo de su utilidad
+                        están las páginas web de búsqueda asociadas a un mapa en el cual nos indican dónde están situados ciertos comercios o restaurantes
+                        a una distancia concreta a pie desde el punto donde estamos en ese momento.    
+                    </p>
+                    <h3>CSS3 y nuevos estilos</h3>
+                    <p>
+                        El estándar CSS3 forma parte de las tecnologías de la familia HTML5, que incluye nuevas tecnologías que pueden ser usadas
+                        para crear páginas Web más vistosas.
+                        <br>
+                        Entre las nuevas herramientas con la que contamos, destacan las Transformaciones 2D y 3D, aplicables a los elementos 
+                        de una página web, así como Fondos, bordes, colores RGBa, gradientes, sombras y esquinas redondeadas.
+                    </p>
+                    <h3>
+                        Conclusiones
+                    </h3>
+                    <p>
+                        1847972 Eduardo Salazar Treviño
+                    </p>
+                    <p>
+                        Para ser una página con varios años de antigüedad, considero que el contenido es bastante adecuado para darnos una introducción
+                        a HTML5 y todas las tecnologías que incorpora con el estándar.<br> Lo que más me llamó la atención fue la mejora e inclusión de diversas
+                        APIs para poder tener más herramientas disponibles, tales como las APIs de Video y Audio para poder reproducir contenido multimedia de una 
+                        manera mucho más sencilla. Sin duda alguna, HTML5 cumple con su objetivo de hacer la creación de páginas Web más sencillas y completas.
                     </p>
                 </div>
+
             </main>
             <nav>
             <ul>
