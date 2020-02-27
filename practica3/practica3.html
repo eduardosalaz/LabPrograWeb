@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+lección 3 del curso
+1.- ¿Que es un CSS? 2.- ¿Para que sirve un CSS?
+3.- ¿Cual es la diferencia que seria mas difícil de realizar en un sitio web si se optara por no usar un CSS?
+Conclusión-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Práctica 3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .documento {
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      li {
+        margin: 0 0 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        style="float: none; margin: 0px 15px 15px 0px;"
+        src="../uanl.png"
+        width="100"
+        alt="Logo UANL"
+      />
+      <h1>Práctica 3 de Laboratorio de Programación Web</h1>
+    </header>
+    <section>
+      <main>
+        <h2>Resumen Lección 3: Introducción a la presentación en pantalla con CSS</h2>
+        <div class="documento">
+            <p>
+                <h3>Archivo Reset de CSS</h3>
+                <p style=margin-left:40px;>
+                    Para poder tratar con las diferencias que existen entre navegador y navegador, comúnmente se incluye un
+                    archivo .css llamado Reset. Lo que este archivo nos permite es poder homologar los formatos y estilos
+                    de las tags de HTML, para conseguir una visualización estándar sin importar el navegador del que se accese
+                    a la página. A continuación, un ejemplo de un archivo reset.css 
+                    <script src="https://gist.github.com/eduardosalaz/15abcc7bbba7cb60b4758bbce563f55c.js"></script>
+                    Como podemos ver, la gran mayoría de los atributos se establecen en 0, o nulos, para poder tener una
+                    página que luzca de manera idéntica sin importar en que navegador se vea.
+                </p>
+                <h3>Historia de la presentación en pantalla en la Web</h3>
+                <p>
+                    En el pasado, cuando CSS no existía, se realizaba el formato de la página a través de tablas de HTML, que aunque funcionaban,
+                    hoy en día no serían un reemplazo adecuado para la gran cantidad de herramientas útiles que nos brinda el CSS y sus hojas
+                    de estilo.<br>
+                    CSS ha sustituido ya el empleo de tablas para organizar las páginas, por lo que los elementos de tabla de HTML van regresando, 
+                    poco a poco, a su función original, que es la de mostrar datos estructurados, y abandonan su papel como armazón visual de las 
+                    páginas.
+                </p>
+                <h3>Elemento div</h3>
+                <p>
+                    El elemento de división de contenido HTML (&ltdiv>) es el contenedor genérico para el contenido de flujo. 
+                    No tiene ningún efecto sobre el contenido o el diseño hasta que se haya diseñado con CSS.
+                    <br><br>
+                    Como contenedor "puro", el elemento &ltdiv> no representa inherentemente nada. En cambio, se usa para agrupar contenido 
+                    para que se pueda diseñar fácilmente usando los atributos de clase o id, marcando una sección de un documento como 
+                    escrita en un idioma diferente (usando el atributo lang), y así sucesivamente.
+                    <br><br>
+                    Un elemento &ltdiv> suele llevar un atributo ID (con lo que adquiere un “nombre” explícito dentro de la página) o bien 
+                    pertenecer a una clase CSS, utilizándose ambos como medio para aplicar al contenedor uno o más estilos CSS. 
+                </p>
+                <h3>Propiedad float</h3>
+                <p>
+                    La propiedad CSS float coloca un elemento en el lado izquierdo o derecho de su contenedor, lo que permite que el texto y 
+                    los elementos en línea lo envuelvan. El elemento se elimina del flujo normal de la página, aunque sigue siendo parte del flujo 
+                    (en contraste con el posicionamiento absoluto).<br>
+                    La propiedad float se especifica como una sola palabra clave, elegida de la lista de valores a continuación.
+                    <ul>
+                        <li>left: El elemento debe flotar en el lado izquierdo de su bloque contenedor.</li>
+                        <li>right: El elemento debe flotar en el lado derecho de su bloque contenedor.</li>
+                        <li>none: El elemento no debe flotar.</li>
+                        <li>inline-start: El elemento debe flotar en el lado inicial de su bloque contenedor. Ese es el lado izquierdo con scripts ltr, y el lado derecho con scripts rtl.</li>
+                        <li>inline-end: El elemento debe flotar en el lado final de su bloque contenedor. Ese es el lado izquierdo con scripts ltr, y el lado derecho con scripts rtl.</li>
+                    </ul>
+                </p>
+                <h3>Columnas con float</h3>
+                <p>Es posible crear columnas de distintas anchuras y alturas usando la propiedad float.</p>
+                <script src="https://gist.github.com/eduardosalaz/00f9959a1eb6787aeb6119742a692f38.js"></script>
+                <iframe src="floats.html" height = 200px; width=400px></iframe>
+                <h3>Menús de navegación</h3>
+                <p>
+                    Poniendo un ejemplo muy práctico, esta misma página esta creada usando floats para la alineación de sus distintos
+                    divs, incluyendo la navbar que está al lado izquierdo, que sirve para navegar entre los contenidos del sitio.
+                </p>
+                <h3>Estilos para el texto</h3>
+                <p>
+                    De nuevo, aquí mismo en la página, se usan atributos de CSS que alteran el texto de la página, que puede ir desde
+                    los tamaños de las letras, la fuente que se usa, el espaciado que tienen entre ellas, la alineación del texto,
+                    su color, entre otros atributos igual de útiles e importantes
+                </p>
+                <h3>Propiedad padding</h3>
+                <p>
+                    La propiedad CSS de padding establece el área de padding en los cuatro lados de un elemento. 
+                    Es una forma abreviada de padding-top, padding-right, padding-bottom y padding-left.
+                    El área de padding de un elemento es el espacio entre su contenido y su borde.
+                    <br>
+                    La propiedad de relleno se puede especificar utilizando uno, dos, tres o cuatro valores. Cada valor es una &ltlength> o una &ltpercentage>. Los valores negativos no son válidos.
+                    Esta página usa paddings para sus elementos de CSS.
+                </p>
+        </div>
+        <h2>¿Qué es un CSS?</h2>
+        <div class="documento">
+            <p>
+                Como se había definido desde la práctica 1, un CSS hace referencia a un archivo de hojas de estilo en cascada
+                para poder describir la presentación visual de un documento HTML, para agregarle elementos estéticos y en algunos
+                casos funcionales. El CSS está considerado como una de las 3 tecnologías fundamentales para el desarrollo web,
+                siendo las otras HTML5 y Javascript.<br>
+                Actualmente se usa la versión CSS3, que se empezó a desarrollar en 1999.
+            </p>
+        </div>
+        <h2>¿Para qué sirve un CSS?</h2>    
+        <div class ="documento">
+            <p>
+                Se puede utilizar en diferentes tipos de dispositivos, como pantallas e impresoras grandes o pequeñas. Es 
+                independiente del HTML y se puede usar con cualquier lenguaje de marcado basado en XML. Las especificaciones 
+                CSS son mantenidas principalmente por el Consorcio World Wide Web. El conjunto de reglas CSS consta de un selector 
+                y un bloque de declaración.<br><br>
+                Mientras usa CSS, un usuario puede estar libre de estrés con sus versiones de idiomas anteriores, ya que es muy 
+                compatible incluso con las versiones anteriores. Debido a esto, incluso si las aplicaciones de CSS se desarrollan 
+                en alguna versión anterior del lenguaje de programación y si los desarrolladores integran lo mismo con nuevas 
+                mejoras, CSS se puede incorporar e implementar fácilmente con esos cambios fácilmente. Por lo tanto, no es 
+                necesario eliminar los cambios asociados con el predecesor de CSS y un desarrollador puede actualizar el código 
+                existente con éxito.<br><br>
+                Desde el punto de vista de la accesibilidad, las aplicaciones de CSS proporcionan soluciones mucho mejores que 
+                permiten a los usuarios actualizar la interfaz de usuario para satisfacer los requisitos comerciales. También 
+                permite que las páginas web sean fácilmente representadas por diferentes dispositivos. 
+                Esto en realidad proporciona un impacto mucho más profundo al considerar la modificación del aspecto de una página web 
+                desde la perspectiva del usuario final y del negocio.
+            </p>
+        </div>
+        <h2>¿Cuál es la diferencia que sería mas difícil de realizar en un sitio web si se optara por no usar un CSS?</h2>
+        <div class ="documento">
+            <p>
+                El no usar CSS en el desarrollo web debe de ser la peor decisión que puede tomar cualquier desarrollador, fundamentalmente
+                hablando, sin CSS se haría extremadamente difícil (pero no imposible) el estilo y formato de dicho sitio web. En décadas
+                anteriores, cuando CSS no existía, se realizaba el formato de la página a través de tablas de HTML, que aunque funcionaban,
+                hoy en día no serían un reemplazo adecuado para la gran cantidad de herramientas útiles que nos brinda el CSS y sus hojas
+                de estilo.
+            </p>
+        </div>
+        <h2>Conclusión</h2>
+        <div class = "documento">
+            <h3>Eduardo Salazar Treviño 1847972</h3>
+            <p>
+                Esta práctica fue de mucha utilidad, si bien ya tenía ciertas nociones de CSS y como lo podemos usar en conjunto con HTML, desconocía
+                ciertos temas que aquí se trataban, como el ejemplo histórico del uso de tablas de html para el estilo. Realmente considero que CSS
+                por muchas razones es la mejor herramienta por mucho que se tiene para darle un aspecto más estético a una página web. Me enriquecí con
+                conceptos nuevos que no conocía, o tal vez solo usaba sin preguntarme de donde salían o por qué son importantes.
+            </p>
+        </div>
+      </main>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Index </a></li>
+        </ul>
+      </nav>
+    </section>
+    <footer>
+      <p>Semestre Enero-Junio 2020.</p>
+    </footer>
+  </body>
+</html>

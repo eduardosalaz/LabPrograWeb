@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .columnas {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Columnas con floats</h2>
+
+    <div class="row">
+      <div class="columnas" style="background-color:#aaa;">
+        <h2>Columna 1</h2>
+        <p>Texto columna 1</p>
+      </div>
+      <div class="columnas" style="background-color:#bbb;">
+        <h2>Columna 2</h2>
+        <p>Texto columna 2</p>
+      </div>
+      <div class="columnas" style="background-color:#ccc;">
+        <h2>Columna 3</h2>
+        <p>Texto columna 3</p>
+      </div>
+    </div>
+  </body>
+</html>
