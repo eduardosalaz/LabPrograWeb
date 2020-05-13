@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+    Elaborar una pagina web, que contenga etiquetas y elementos notables de HTML5, como video y audio importado directamente sin el uso de ningun PLUGIN externo. 
+    Ademas esta pagina debera de implementar el uso de al menos 10 etiquetas que se pueden observar en la leccion numero 4 del curso https://msdn.microsoft.com/es-es/ie/hh749023. 
+    Esta pagina tambien puede ser desarrollada mediante la consulta y aplicacion de etiquetas de html5 descritas en http://www.w3schools.com/html/default.asp . 
+    El tema de la pagina es LIBRE, siempre y cuando no sea ofensivo o de material sensible, a su ves esta practica se desarrollara en 2 paginas. 
+    1.- La pagina del tema libre con hoja de estilo propia y etiquetas html5 
+    2.- Una pagina donde se muestre y expliquen las secciones de código en donde se implementaron las etiquetas de html5 explicando su uso y parámetros (si es que los incluye) 
+    Se debe de actualizar su sitio web creando el link y subir el archivo rar aqui. Dudas y comentarios via el grupo de Facebook
+-->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Práctica 5</title>
+  <link rel="stylesheet" href="stylesp5.css" />
+  <style>
+    .documento {
+      margin-left: 40px;
+      margin-right: 40px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    li {
+      margin: 0 0 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img style="float: none; margin: 0px 15px 15px 0px;" src="../uanl.png" width="100" alt="Logo UANL" />
+    <h1>Práctica 5 de Laboratorio de Programación Web</h1>
+  </header>
+  <section>
+    <main>
+      <h2>
+        Uso de etiquetas de HTML5 de la Lección 4
+      </h2>
+        <video width='100%' autoplay loop controls
+          src="media/Hamilton's+Triple+Bahrain+Overtake+ +F1+Best+Overtakes+of+2018.mp4"></video>
+        <audio controls loop>
+          <source src="media/BEST Formula 1 Sounds - V6, V8, V10 and V12.mp3" type="audio/mpeg">
+          <p>Tu navegador no soporta audio de HTML5</p>
+        </audio>
+        <h3>¿Qué es la Fórmula 1?</h3>
+        <div class="documento">
+        <p>
+          Antes que todo, debemos pensar en lo que es un auto de Fórmula. Podemos definir un automóvil de Fórmula como
+          un auto de un sólo asiento que compite en circuitos cerrados de asfalto; si tuviera más asientos sería un
+          vehículo de carreras sport o turismo; y si compitiera en circuitos no cerrados podría ser rally, trepada o
+          rallycross, entre otras opciones.<br><br>
+          Fórmula 1, en tanto, es un término tradicional que implica que, dentro de los autos de Fórmula, es el conjunto
+          de reglas de más alto nivel tecnológico y mecánico. En décadas anteriores existieron además la Fórmula 2,
+          Fórmula 3 y Fórmula 4; la F3 subsiste bien como categoría de formación de alto rendimiento, mientras que la F2
+          y F4 derivaron en otras categorías que cumplen bien su función como pasos en la formación de un piloto hacia
+          lo más alto. En todos estos casos el piloto circula en un vehículo sin techo y con las ruedas descubiertas.
+        </p>
+      </div>
+      <h3>¿Qué tienen de especial los autos de la Fórmula 1?</h3>
+      <div class="documento">
+        <p>
+          Los autos de F1 son los más rápidos y tecnológicos del mundo, debido a su extraordinaria aerodinamia en
+          conjunción con motores muy avanzados. Un auto moderno de F1 puede llegar en condiciones ideales a 360 km/h a
+          19,000 RPM (actualmente limitados a 15,000 RPM) y pueden generar aceleraciones laterales de hasta 5 g en
+          algunas curvas.
+          <div class="child" style="z-index: 2; align-content: center; align-self: center; text-align: center;">
+            <figure>
+              <img style="height: 400px;" src="media/vroom.jpg" alt="Carro de Mercedes F1">
+              <figcaption>Los autos de F1 son los más rápidos y tecnológicos del mundo.</figcaption>
+            </figure>
+          </div>
+          <br /><br />
+          La aerodinámica en la Fórmula 1 actual persigue principalmente dos objetivos: disminuir la resistencia
+          aerodinámica al avance, y conseguir un alto esfuerzo aerodinámico sobre el coche hacia abajo (esfuerzo de
+          sustentación invertido). El equilibrio entre ambos puede llegar a ser determinante para que un monoplaza sea o
+          no competitivo. Estos esfuerzos son directamente proporcionales a los coeficientes aerodinámicos
+          correspondientes, al área frontal del vehículo, a la densidad del aire y al cuadrado de la velocidad del
+          vehículo respecto al aire.
+          <br><br>
+          Otro elemento indispensable para que un monoplaza sea rápido es el motor, o unidad de potencia. A lo largo de
+          la historia las características de este han ido cambiando para ajustarse a la reglamentación.
+          <br><br>
+          Debido al reducido espacio de la cabina de un monoplaza de Fórmula 1 y al grado de concentración y atención
+          que es requerido para conducir un Fórmula 1, el volante de uno de estos monoplazas no solo es el mando del
+          mecanismo de dirección del vehículo, sino que además es una compleja interfaz con múltiples dispositivos
+          electrónicos, tanto de información al piloto, mediante displays, como de mando sobre el vehículo, mediante
+          botones y ruletas que cumplen diversas funciones.
+        </p>
+      </div>
+      <h3>¿Cómo se gana en la Fórmula 1?</h3>
+      <div class="documento">
+        <p>
+          Hay dos Campeonatos Mundiales en juego cada año. El de <i><strong>Pilotos</strong></i> se disputa desde 1950, y premia al conductor
+          que haya sumado más puntos en la temporada, en una escala que ha sufrido diversos cambios a lo largo de la
+          historia; actualmente, el ganador de una carrera recibe 25 puntos, el segundo 18, y luego en escala
+          decreciente hasta el décimo, que sólo recibe un punto. Adicionalmente, el piloto que tenga la vuelta más
+          rápida también recibe un punto.
+          <br><br>
+          Para recibir puntos un piloto debe clasificar, es decir, completar al menos el 90% de la distancia total
+          recorrida por el ganador. Sin embargo, en ciertas condiciones es posible recibir puntos incluso si se retira
+          antes de concluir la carrera.
+          En caso de que el ganador complete menos del 75% de las vueltas de carrera, solo se otorga la mitad de los
+          puntos a pilotos y constructores. Esto ha ocurrido solo cinco veces en la historia de la Fórmula 1, la última
+          vez fue en el Gran Premio de Malasia de 2009, cuando la carrera fue cancelada después de 31 vueltas debido a
+          la lluvia torrencial. Esta circunstancia decidió al ganador del campeonato en una ocasión
+          <br /><br />
+          El de <i><strong>Constructores</strong></i> se realiza desde 1958, y premia al equipo cuyos pilotos sumen más puntos durante una
+          temporada. Puede darse que el campeón de Pilotos sea de un equipo, y el campeón de Constructores sea de otro
+          equipo.
+        </p>
+      </div>
+    </main>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Index </a></li>
+        <li><a href="exp_practica5.html">Explicación del código</a></li>
+      </ul>
+    </nav>
+  </section>
+  <footer>
+    <p>Semestre Enero-Junio 2020.</p>
+  </footer>
+</body>
+</html>

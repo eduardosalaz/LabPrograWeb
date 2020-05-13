@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+    Elaborar una pagina web, que contenga etiquetas y elementos notables de HTML5, como video y audio importado directamente sin el uso de ningun PLUGIN externo. 
+    Ademas esta pagina debera de implementar el uso de al menos 10 etiquetas que se pueden observar en la leccion numero 4 del curso https://msdn.microsoft.com/es-es/ie/hh749023. 
+    Esta pagina tambien puede ser desarrollada mediante la consulta y aplicacion de etiquetas de html5 descritas en http://www.w3schools.com/html/default.asp . 
+    El tema de la pagina es LIBRE, siempre y cuando no sea ofensivo o de material sensible, a su ves esta practica se desarrollara en 2 paginas. 
+    1.- La pagina del tema libre con hoja de estilo propia y etiquetas html5 
+    2.- Una pagina donde se muestre y expliquen las secciones de código en donde se implementaron las etiquetas de html5 explicando su uso y parámetros (si es que los incluye) 
+    Se debe de actualizar su sitio web creando el link y subir el archivo rar aqui. Dudas y comentarios via el grupo de Facebook
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Práctica 5</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .documento {
+      margin-left: 40px;
+      margin-right: 40px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    li {
+      margin: 0 0 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img style="float: none; margin: 0px 15px 15px 0px;" src="../uanl.png" width="100" alt="Logo UANL" />
+    <h1>Práctica 5 de Laboratorio de Programación Web</h1>
+  </header>
+  <section>
+    <main>
+      <h2>
+       Explicación del código de la Práctica 5
+      </h2>
+      <h3>Para esta práctica se usaron las siguientes tags</h3>
+      <div class="documento">
+        <p>
+            <script src="https://gist.github.com/eduardosalaz/d46e061eb2ba36babf4600b28218fd62.js"></script>
+        </p>
+      </div>
+      <h3>Explicación de cada una</h3>
+      <div class="documento">
+        <p>
+          <ul>
+            <li>
+              &lt;h1> : Es la tag que marca los encabezados dentro de nuestro contenido, mientras más alto sea el número menor será el encabezado.
+            </li>
+            <li>
+              &lt;div>: Es usada para agrupar elementos de html para poder manipularlos con CSS o estructurar el contenido de la página. Debe de tener un nombre de div o clase de CSS.
+            </li>
+            <li>
+              &lt;nav>: Es usada para marcar la sección de navegación de la página donde se ubican los enlaces a otras páginas.
+            </li>
+            <li>
+              &lt;audio>: Es usada para poder incluir archivos de audio de manera nativa en la página gracias a las nuevas tecnologías de HTML5. Se especifica la ubicación del archivo,
+              si tiene controles o no, el tipo de archivo, si entra en loop, si está muteado por defecto o si hace autoplay.
+            </li>
+            <li>
+              &lt;video>: Es usada para incluir archivos de video en la página sin necesidad de plugins externos. Se especifica la ubicación
+              del archivo, si tiene controles o no, la altura, el ancho, si entra en loop, si está muteado por defecto o si hace autoplay.
+            </li>
+            <li>
+              &lt;i>: Es usada para hacer itálicas las palabras contenidas dentro de la tag.
+            </li>
+            <li>
+              &lt;strong>: Es usada para remarcar en negritas las palabras contenidas dentro de la tag.
+            </li>
+            <li>
+              &lt;figure>: Es usada para marcar figuras como imágenes o videos dentro de la página para poder añadirles leyendas. Se especifica la figura a añadir, su ubicación
+              y su leyenda con &lt;figcaption>
+            </li>
+            <li>
+              &lt;main>: Es usada para marcar el área principal de la página donde se ubicará el contenido relevante.
+            </li>
+            <li>
+              &lt;footer>: Es usada para marcar el área del pie de página.
+            </li>
+          </ul>
+        </p>
+      </div>
+    </main>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Index </a></li>
+        <li><a href="practica5.html">Volver a la práctica </a></li>
+      </ul>
+    </nav>
+  </section>
+  <footer>
+    <p>Semestre Enero-Junio 2020.</p>
+  </footer>
+</body>
+</html>
