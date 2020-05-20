@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+   Elaborar una pagina web, en la cual se elabore una figura o dibujo complejo de manera dinamica usando el elemento Canvas. 
+   Para la elaboracion de lo anterior se debera de consultar la leccion numero 5 del curso de HTML5 en MSDN https://msdn.microsoft.com/es-es/ie/hh749024 
+   Asi como opcionalmente, su equivalente en la pagina de w3schools. http://www.w3schools.com/html/html5_canvas.asp 
+   El procedimiento para subir las actividades sera el mismo que en las practicas pasadas.
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Práctica 6</title>
+  <script type="text/javascript" src="pelota.js" />
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .documento {
+      margin-left: 40px;
+      margin-right: 40px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    li {
+      margin: 0 0 10px 0;
+    }
+  </style>
+</head>
+<body onload="main();">
+  <header>
+    <img style="float: none; margin: 0px 15px 15px 0px;" src="../uanl.png" width="100" alt="Logo UANL" />
+    <h1>Práctica 6 de Laboratorio de Programación Web</h1>
+  </header>
+  <section>
+    <main>
+      <h2>
+        Dibujo con Canvas (Juego de Pelota)
+      </h2>
+      <div class="documento">
+        <p>
+          Mover con teclas de Left y Right.
+        </p>
+        <div>
+          <canvas id="canvas" width="800" height="600">
+            Tu navegador no soporta la API Canvas.
+          </canvas>
+        </div>
+        <img src="bar.png" id="bar" style="display:none;" />
+      </div>
+      <h2>Conclusión</h2>
+      <div class="documento">
+        <h3>Eduardo Salazar Treviño 1847972</h3>
+        <p>
+          Esta práctica me pareció realmente interesante, es la segunda o tercera vez que trabajo con el elemento Canvas
+          en mi vida y la primera vez que lo hago de forma dinámica recibiendo input del usuario.<br>
+          Creo que tomando en cuenta que es una API nativa de HTML5 es una muy buena herramienta que sirve para poder satisfacer 
+          las necesidades de diseños básicos que tenga un programador web sin recurrir a software externo, e incluso, si se llega a usar con Javascript de una manera
+          extensa se pueden lograr dibujos mucho más complejos e interactivos.<br>
+          Por otra parte, también es necesario tener buenos conocimientos de conceptos como el DOM para interactuar con este en el script que controle el Canvas,
+          no basta sólo con saber de HTML y CSS. Para mí, esta fue una práctica bastante enriquecedora y que me sirvió para reforzar mis conocimientos
+          de Javascript
+        </p>
+      </div>
+    </main>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Index </a></li>
+      </ul>
+    </nav>
+  </section>
+  <footer>
+    <p>Semestre Enero-Junio 2020.</p>
+  </footer>
+</body>
+</html>
