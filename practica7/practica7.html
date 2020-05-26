@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+   Elaborar una pagina Web interactiva con la funcionalidad de Drag and Drop de HTML5. 
+Esta pagina deber algun juego o tienda (donde se arrastren o seleccione articulos), 
+EXCLUYENDO los juegos de ordenar cuadros para formar una imagen (ejemplo: https://i.ytimg.com/vi/OwzoqFTU238/hqdefault.jpg). 
+Fuera de eso el tema es libre, siempre y cuando se incluyan instrucciones para el usuario, ya sea para la compra o como jugar el juego. 
+Para lo anterior consultar la leccion numero 6 del curso de msdn https://msdn.microsoft.com/es-es/ie/hh749025 , o bien su equivalente en w3schools. 
+Se debera de actualizar y subir su archivo que contenga su sitio web con el resto de las actividades.
+-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Práctica 7</title>
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .documento {
+      margin-left: 40px;
+      margin-right: 40px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    li {
+      margin: 0 0 10px 0;
+    }
+        .portfolio {
+            display: grid;
+            grid-template-rows: 425px 425px 425px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 40px;
+
+            grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+        }
+
+        .image1 {
+            grid-area: img1;
+            text-align: center;
+        }
+
+        .image2 {
+            grid-area: img2;
+            text-align: center;
+        }
+
+        .image3 {
+            grid-area: img3;
+            text-align: center;
+        }
+
+        .image4 {
+            grid-area: img4;
+            text-align: center;
+        }
+
+        .image5 {
+            grid-area: img5;
+            text-align: center;
+        }
+
+        .image6 {
+            grid-area: img6;
+            text-align: center;
+        }
+
+        .image7 {
+            grid-area: img7;
+            text-align: center;
+        }
+
+        .image8 {
+            grid-area: img8;
+            text-align: center;
+        }
+
+        .image9 {
+            grid-area: img9;
+            text-align: center;
+        }
+        #div1 {
+  width: 700px;
+  height: 1000px;
+  padding: 10px;
+  border: 5px solid #aaaaaa;
+        }
+  * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 10px;
+}
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img style="float: none; margin: 0px 15px 15px 0px;" src="../uanl.png" width="100" alt="Logo UANL" />
+    <h1>Práctica 7 de Laboratorio de Programación Web</h1>
+  </header>
+  <section>
+    <main>
+      <h2>
+        Tienda de Videojuegos
+      </h2>
+      <div class="documento">
+        <p>
+          Arrastrar los elementos que se deseen comprar a la sección del carrito de compras de la derecha, una vez terminado, presione el botón de finalizar compra.
+        </p>
+        <div id="recibo" style="font-size: xx-large;color: red;">
+          <br>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="imgs/gtaV.jpg"alt="GTA V" draggable="true" ondragstart="drag(event)" id="1">
+            <pre>Grand Theft Auto V $800</pre>  
+          </div>
+          <div class="column">
+            <img src="imgs/O2jpg.jpg" alt="Overwatch" draggable="true" ondragstart="drag(event)" id="2">
+              <pre>Overwatch $500</pre>
+          </div>
+          <div class="column">
+            <img src="imgs/witcha.jpg" alt="Witcher III" draggable="true" ondragstart="drag(event)" id="3">
+            <pre>The Witcher III: Wild Hunt $800</pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="imgs/rim.jpg" alt="Skyrim" draggable="true" ondragstart="drag(event)" id ="4">
+              <pre>Elder Scrolls V: Skyrim $600</pre> 
+          </div>
+          <div class="column">
+            <img  src="imgs/nms.jpg" alt="No Man's Sky" draggable="true" ondragstart="drag(event)" id ="5">
+              <pre>No Man's Sky $700</pre>
+          </div>
+          <div class="column">
+            <img src="imgs/rdd2.jpg" alt="Red Dead Redemption 2" draggable="true" ondragstart="drag(event)" id ="6">
+              <pre>Red Dead Redemption 2 $700</pre>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="imgs/ac.jpg" alt="Assasin's Creed Odyssey" draggable="true" ondragstart="drag(event)" id="7">
+              <pre>Assasin's Creed Odyssey $800</pre>
+          </div>
+          <div class="column">
+            <img src="imgs/mhw.png" alt="Monster Hunter World: Iceborne" draggable="true" ondragstart="drag(event)" id ="8">
+              <pre>Monster Hunter World: Iceborne $900</pre>
+          </div>
+          <div class="column">
+            <img src="imgs/prey.jpg" alt="Prey" draggable="true" ondragstart="drag(event)" id ="9">
+              <pre>Prey $750</pre>
+          </div>
+        </div>
+      
+      <h2>Conclusión</h2>
+      <div class="documento">
+        <h3>Eduardo Salazar Treviño 1847972</h3>
+        <p>
+          Esta práctica me pareció realmente interesante, es la segunda o tercera vez que trabajo con el elemento Canvas
+          en mi vida y la primera vez que lo hago de forma dinámica recibiendo input del usuario.<br>
+          Creo que tomando en cuenta que es una API nativa de HTML5 es una muy buena herramienta que sirve para poder satisfacer 
+          las necesidades de diseños básicos que tenga un programador web sin recurrir a software externo, e incluso, si se llega a usar con Javascript de una manera
+          extensa se pueden lograr dibujos mucho más complejos e interactivos.<br>
+          Por otra parte, también es necesario tener buenos conocimientos de conceptos como el DOM para interactuar con este en el script que controle el Canvas,
+          no basta sólo con saber de HTML y CSS. Para mí, esta fue una práctica bastante enriquecedora y que me sirvió para reforzar mis conocimientos
+          de Javascript
+        </p>
+      </div>
+    </main>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Index </a></li>
+      </ul>
+      <strong>Arrastrar los elementos a comprar a esta zona</strong>
+      <button onclick="mostrarRecibo()">Presionar aquí para finalizar la compra</button>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      </div>
+    </nav>
+  </section>
+  <footer>
+    <p>Semestre Enero-Junio 2020.</p>
+  </footer>
+</body>
+</html>
