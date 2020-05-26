@@ -74,7 +74,7 @@ function allowDrop(ev) {
         console.log(precioTotal);
         break;
       default:
-        console.log(precioTotal);
+        console.log("??");
         break;
     }
 }
