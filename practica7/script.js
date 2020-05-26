@@ -1,6 +1,7 @@
 var precioTotal= 0;
 var gtaP = 800, owP = 500, witP = 800, skyrP = 600, rdP=700, nmsP = 700, acP = 800, mhP = 900, preP = 750;
-var mensaje = "Compraste los juegos: "
+var mensaje = "Compraste los juegos: ";
+var lista = [];
 
 function allowDrop(ev) {
     ev.preventDefault();
@@ -9,7 +10,7 @@ function allowDrop(ev) {
   function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
   }
-  var lista = [];
+
   function drop(ev) {
     ev.preventDefault();
     var id = ev.dataTransfer.getData("Text");
